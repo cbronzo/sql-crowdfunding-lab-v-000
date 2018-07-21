@@ -28,7 +28,7 @@ FROM projects
 INNER JOIN pledges
 ON projects.id = pledges.project_id
 GROUP BY projects.title
-HAVING money_collected >= 0"
+HAVING money >= 0"
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
